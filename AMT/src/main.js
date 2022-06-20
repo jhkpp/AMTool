@@ -22,12 +22,9 @@ app.whenReady().then(() => {
 
   tray = new Tray('icon/icon.jpg')
   const contextMenu = Menu.buildFromTemplate([
-    { label: 'Item1', type: 'radio' },
-    { label: 'Item2', type: 'radio' },
-    { label: 'Item3', type: 'radio', checked: true },
-    { label: 'Item4', type: 'radio' }
+    { label: 'admin', type: 'normal' },
   ])
-  tray.setToolTip('This is my application.')
+  tray.setToolTip('AMT')
   tray.setContextMenu(contextMenu)
 
   app.on('activate', () => {
